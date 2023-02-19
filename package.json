@@ -1,10 +1,13 @@
 {
   "name": "@sanoy2/basicprotopackage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build:proto:win": "rm -rf src && mkdir src && protoc --plugin=./node_modules/.bin/protoc-gen-ts_proto.cmd --ts_proto_out=src ./*.proto ",
     "build:proto:lin": "rm -rf src && mkdir src && protoc --plugin=./node_modules/.bin/protoc-gen-ts_proto --ts_proto_out=src ./*.proto",
     "build": "npx tsc"
