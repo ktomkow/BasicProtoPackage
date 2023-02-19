@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+import "main.proto";
+
+message FirstResponse {
+    Identifier id = 1;
+    string payload = 2;
+}
+
+message SecondResponse {
+    Identifier id = 1;
+    repeated string payload = 2;
+}
+
+message ThirdResponse {
+    Identifier id = 1;
+    oneof number {
+        uint32 number_one = 2;
+        uint32 number_two = 3;
+    }
+}
