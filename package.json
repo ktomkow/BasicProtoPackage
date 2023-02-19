@@ -1,6 +1,6 @@
 {
   "name": "@sanoy2/basicprotopackage",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "main": "lib/cjs/index.js",
   "types": "lib/cjs/index.d.ts",
@@ -18,5 +18,8 @@
   "devDependencies": {
     "ts-proto": "^1.139.0",
     "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "protobufjs": "^7.2.2"
   }
 }
